@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 372px;
+    height: 66px;
+
+    border-radius: 7px;
+    align-items: center;
+}
+
+.img {
+    width: 42px;
+    height: 42px;
+    border-radius: 25px;
+    margin-left: 17px;
+}
+
+.boxText {
+    margin-left: 15px;
+}
+
+.name {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #8191A9;
+}
+
+.boxTime {
+    align-items: center;
+    margin-left: 70px;
+
+}
+
+.time {
+    width: 39px;
+    height: 19px;
+    font-size: 12px;
+    color: #717D9D;
+    margin: 0;
+    padding: 0;
+}
+
+.number {
+    margin: 0;
+    padding: 0;
+    Width: 24px;
+    Height: 24px;
+    text-align: center;
+    background-color: #00A389;
+    border-radius: 7px;
+    color: white;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.star {
+    margin-left: 6px;
+}
