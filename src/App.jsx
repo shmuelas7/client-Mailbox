@@ -1,3 +1,4 @@
+
 import Layout from "./Layout/Layout";
 import { useState, useEffect } from "react";
 import { UserContext } from "./context/userContext";
@@ -18,7 +19,7 @@ function App() {
         </DataContext.Provider>
       </UserContext.Provider>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
