@@ -6,7 +6,12 @@
     background-color: #00A389;
     color: white;
     align-items: center;
+    cursor: pointer;
 
+}
+
+.container:hover {
+    background-color: #008a74;
 }
 
 .img {
@@ -20,5 +25,6 @@
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.02em;
+    line-height: 18.5px;
     font-family: 'Kumbh Sans';
 }

@@ -1,0 +1,35 @@
+.container {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    height: 100vh;
+}
+
+.message {
+    border-bottom: 1px solid #DEE1E6;
+}
+
+.boxMessage {
+    overflow-y: auto;
+    min-height: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    /* max-height: 100px; */
+}
+
+.MessageOpen {
+    overflow-y: auto;
+    flex-grow: 1;
+    min-height: 0;
+    /* max-height: 100px; */
+}
+
+.textArea {
+    /* position: sticky;
+    bottom: 0; */
+    width: 100%;
+}

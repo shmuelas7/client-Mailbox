@@ -1,16 +1,30 @@
 .container {
     display: flex;
-    Width: 280px;
-    Height: 62px;
+    Height: 45px;
     align-items: center;
+    color: #a2aab4;
+    transition: .05s ease-in-out all;
+    cursor: pointer;
 
 
+}
+
+.container:hover {
+    color: #00a389;
+
+}
+
+.text {
+    font-size: 14.5px;
+    line-height: 18px;
+    font-weight: 500;
 }
 
 .img {
     width: 24px;
     height: 24px;
-    margin: 20px
+    margin: 20px;
+
 }
 
 .box {
@@ -27,6 +41,8 @@
     border-radius: 7px;
     color: white;
     margin-right: 30px;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 18px;
+    padding-top: 3px;
 
 }

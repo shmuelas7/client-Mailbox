@@ -1,21 +1,22 @@
-import NewMessages from "./components/NewMessage/NewMessage.jsx";
-import Inbox from "./components/Inbox/Inbox.jsx";
-import Mail from "./components/Mail/Mail.jsx";
-import Message from "./components/Message/Message.jsx";
-import MessageOpen from "./components/MessageOpen/MessageOpen.jsx";
-import TitleMail from "./components/TitleMail/TitleMail.jsx";
-import MenuOptions from "./components/MenuOptions/MenuOptions.jsx";
+import Layout from "./Layout/Layout";
+import { useState, useEffect } from "react";
+import { UserContext } from "./context/userContext";
+import { DataContext } from "./context/dataContext";
+import api from "./api/api";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const [user, setUser] = useState();
+  const [userData, setUserData] = useState({});
+  const navigate = useNavigate;
+
   return (
     <>
-      <NewMessages />
-      <Inbox />
-      <Mail />
-      <TitleMail />
-      <Message />
-      <MessageOpen />
-      <MenuOptions />
+      <UserContext.Provider value={{ user, setUser }}>
+        <DataContext.Provider value={{ userData, setUserData }}>
+          <Layout />
+        </DataContext.Provider>
+      </UserContext.Provider>
     </>
   );
 }

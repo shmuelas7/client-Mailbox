@@ -1,19 +1,39 @@
 import style from "./style.module.css";
-import avatar from "../../assets/avatar.jpg";
 import backArrow from "../../assets/backArrow.svg";
+import { useContext, useState } from "react";
+import { UserContext } from "../../context/userContext";
 
-function Message(props) {
-  let x = false;
+function Message({ me = true, message, date, name, img, from }) {
+  const { user, setUser } = useContext(UserContext);
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className={style.container}>
-      {x ? (
-        <img className={style.img} src={avatar} alt="mail Logo" />
-      ) : (
-        <img className={style.arrow} src={backArrow} alt="mail Logo" />
-      )}
-      <p className={style.name}>{x ? "Jessica Koel" : "You"}</p>
-      <p className={style.text}>- Hi, I have a new meeting opportunity...</p>
-      <p className={style.date}>28.03.2024 &nbsp; &nbsp; 09:25</p>
+    <div>
+      <div
+        className={style.container}
+        onClick={() => {
+          setOpen(!open);
+        }}
+      >
+        <div className={style.boxImg}>
+          {user?._id == from ? (
+            <img className={style.arrow} src={backArrow} alt="mail Logo" />
+          ) : (
+            <img className={style.img} src={img} alt="mail Logo" />
+          )}
+        </div>
+        <p className={style.name}>{user?._id == from ? "You" : name}</p>
+        <p
+          className={style.text}
+          style={open ? { visibility: "hidden" } : null}
+        >
+          {message}
+        </p>
+        <p className={style.date}>{date}</p>
+      </div>
+      <div style={!open ? { display: "none" } : null}>
+        <p className={style.textOpen}>{message}</p>
+      </div>
     </div>
   );
 }

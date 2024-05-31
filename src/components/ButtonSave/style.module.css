@@ -1,0 +1,17 @@
+.container {
+    Width: 114px;
+    Height: 51px;
+    border-radius: 12px;
+    background-color: #00A389;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer
+}
+
+.text {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.6px;
+}

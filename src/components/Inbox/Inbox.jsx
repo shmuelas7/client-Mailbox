@@ -1,17 +1,13 @@
-import group from "../../assets/Group.svg";
 import style from "./style.module.css";
 
-function Inbox(props) {
-  let x = true;
+function Inbox({ icon, text, number = 0 }) {
   return (
     <div className={style.container}>
-      <div>
-        <img className={style.img} src={group} alt="group" />
-      </div>
-      <div className={style.box} style={x ? null : { color: "#00A389" }}>
-        <p>Inbox</p>
+      <div className={style.img}>{icon}</div>
+      <div className={style.box} style={number ? null : { color: "#00A389" }}>
+        <p className={style.text}>{text}</p>
 
-        {x && <p className={style.number}>1</p>}
+        {number > 0 && <p className={style.number}>{number}</p>}
       </div>
     </div>
   );

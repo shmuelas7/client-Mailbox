@@ -1,13 +1,12 @@
 import style from "./style.module.css";
 import avatar from "../../assets/avatar.jpg";
+import Message from "../Message/Message";
 
 function MessageOpen(props) {
   return (
     <div className={style.container}>
       <div className={style.box}>
-        <img className={style.img} src={avatar} alt="mail Logo" />
-        <p className={style.name}>Jessica Koel</p>
-        <p className={style.date}>Today, 28.03.2024&nbsp; &nbsp; 09:25</p>
+        <Message />
       </div>
       <p className={style.text}>
         Dear Moshe,
