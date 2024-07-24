@@ -70,18 +70,19 @@
     display: flex;
     padding: 1rem 0;
     margin-bottom: 1rem;
+    position: relative;
 }
 
-.input2>label {
+.boxInput2>label {
     width: 100px;
     padding-right: 67px;
 }
 
 
-.input2>button {
+.boxInput2>button {
     background-color: #00a389;
     color: #fff;
-
+    cursor: pointer;
     align-items: center;
     border-radius: 12px;
     Width: 66px;
@@ -91,4 +92,23 @@
 
 .textArea {
     height: 50%
+}
+
+.list {
+    position: absolute;
+    width: 78%;
+    background-color: white;
+    border: 1px solid #F1F1F1;
+    border-radius: 6px;
+    height: 100px;
+    top: 46px;
+    left: 95px;
+    overflow-y: scroll;
+
+}
+
+.boxInput2 {
+    display: flex;
+    width: 100%;
+
 }
