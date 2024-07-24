@@ -5,7 +5,7 @@ import style from "./style.module.css";
 import TextArea from "../../components/TextArea/TextArea";
 import Offers from "../../components/Offers/Offers";
 import { useParams } from "react-router-dom";
-import { useEffect, useState,useContext, } from "react";
+import { useEffect, useState, useContext, } from "react";
 import api from "../../api/api";
 import { UserContext } from "../../context/userContext";
 
@@ -22,29 +22,29 @@ function Conversation() {
       setChats(res.data);
     };
     getData();
-  }, [chatId,get]);
+  }, [chatId, get]);
 
-  async function updateChats(){
-    if(content.length>0){
-        let res = await api.post('chat/addMessage',{
-          content:content,
-          chatId:chatId
-    })
-    setGet(!get)
-    setContent("")
+  async function updateChats() {
+    if (content.length > 0) {
+      let res = await api.post('chat/addMessage', {
+        content: content,
+        chatId: chatId
+      })
+      setGet(!get)
+      setContent("")
+    }
   }
-}
   return (
     <div className={style.container}>
       {!chats ? (
-        <h1>hh</h1>
+        <h1>Loading...</h1>
       ) : (
         <>
           <Offers />
           <TitleMail header={chats.subject} time={chats.lastDate} />
           <div className={style.boxMessage}>
 
-            {!chats?<h1>hh</h1>:chats.msg?.map((value) => {
+            {!chats ? <h1>hh</h1> : chats.msg?.map((value) => {
               return (
                 <div className={style.message} key={value._id}>
                   <Message
@@ -59,10 +59,10 @@ function Conversation() {
             })}
           </div>
           <div className={style.textArea}>
-            <TextArea 
-            func={updateChats} 
-            content={content} 
-            setContent={setContent} />
+            <TextArea
+              func={updateChats}
+              content={content}
+              setContent={setContent} />
           </div>
         </>
       )}
