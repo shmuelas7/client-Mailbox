@@ -20,7 +20,7 @@ export default function Login() {
     const data = await api.get("/user");
     if (data) {
       setUser(data.data);
-      navigate("/");
+      navigate("/stats");
     }
   }
 

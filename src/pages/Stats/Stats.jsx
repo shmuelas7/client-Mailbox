@@ -14,7 +14,7 @@ function Stats() {
   const { user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
   return (
-    <div style={{ display: "flex" ,flexGrow:"1"}}>
+    <div style={{ display: "flex", flexGrow: "1" }}>
       <div className={style.container}>
         <div>
           <img src={light} className={style.img} />
@@ -39,7 +39,7 @@ function Stats() {
           <li
             className={style.icon}
             onClick={() => {
-              navigate("/emails");
+              navigate("/stats/emails");
             }}
           >
             <div className={style.box}>

@@ -26,7 +26,7 @@ function Emails() {
     getData();
   }, []);
   return (
-    <div style={{ display: "flex",flexGrow:"1" }}>
+    <div style={{ display: "flex", flexGrow: "1" }}>
       {!unRead ? (
         <h1>hh</h1>
       ) : (
@@ -58,7 +58,7 @@ function Emails() {
             </li>
             <li
               onClick={() => {
-                navigate("/emails/inbox");
+                navigate("/stats/emails/inbox");
               }}
             >
               <Inbox
@@ -69,7 +69,7 @@ function Emails() {
             </li>
             <li
               onClick={() => {
-                navigate("/emails/sent");
+                navigate("/stats/emails/sent");
               }}
             >
               <Inbox
@@ -81,7 +81,7 @@ function Emails() {
 
             <li
               onClick={() => {
-                navigate("/emails/favorite");
+                navigate("/stats/emails/favorite");
               }}
             >
               <Inbox
@@ -92,14 +92,14 @@ function Emails() {
             </li>
             <li
               onClick={() => {
-                navigate("/emails/draft");
+                navigate("/stats/emails/draft");
               }}
             >
               <Inbox icon={<BsPencil size={24} />} text="Draft" />
             </li>
             <li
               onClick={() => {
-                navigate("/emails/deleted");
+                navigate("/stats/emails/deleted");
               }}
             >
               <Inbox icon={<AiOutlineDelete size={24} />} text="Deleted" />

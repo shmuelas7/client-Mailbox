@@ -16,7 +16,8 @@ function Layout() {
       <Routes>
         {Object.keys(user).length ? (
           <>
-            <Route path="/" element={<Stats />}>
+            <Route path="/" element={<Login />} />
+            <Route path="/stats" element={<Stats />}>
               <Route path="emails" element={<Emails />}>
                 <Route path=":inbox" element={<Inbox />}>
                   <Route path=":chatId" element={<Conversation />} />
@@ -25,7 +26,7 @@ function Layout() {
               </Route>
             </Route>
             <Route path="/forgetPassword" element={<ForgetPassword />} />
-            <Route path="login" element={<Login />} />
+
           </>
         ) : (
           <>
