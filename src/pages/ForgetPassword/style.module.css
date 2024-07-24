@@ -1,0 +1,122 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.leftBox {
+    min-width: 520px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.rightBox {
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 99%;
+
+}
+
+.headLine {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    position: relative;
+}
+
+.input>input {
+    margin: 0.6rem;
+    height: 46px;
+    width: 312px;
+    border: 1px solid #A2AAB4;
+    border-radius: 5px;
+    padding-left: 50px;
+    font-size: 16px;
+
+}
+
+.input>img {
+    position: absolute;
+    left: 24px;
+    bottom: 24px
+}
+
+.input>input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 2%;
+    padding: 50px;
+}
+
+.forgetPassword {
+    margin-left: 200px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #A2AAB4;
+
+}
+
+.forgetPassword>a {
+    color: #A2AAB4;
+    text-decoration: underline;
+}
+
+.SignIn {
+    Width: 174px;
+    Height: 51px;
+    border-radius: 30px;
+    color: white;
+    background-color: #00A389;
+    border: none;
+    border-color: #00A389;
+    margin-top: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.boxInput>p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    color: #A2AAB4;
+    padding-top: 20px;
+}
+
+.boxInput>p>a {
+    color: #00A389;
+    text-decoration: underline;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #A2AAB4;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 40px;
+}

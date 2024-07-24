@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    Width: 65px;
+    Height: 41px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trash {
+    margin-left: 5px;
+}
+
+.menu {
+    margin-right: 8px;
+}

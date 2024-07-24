@@ -1,0 +1,104 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.toolbar {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 12px;
+    border-right: 1px solid #ccc;
+    border-top: none;
+    background-color: white;
+}
+
+.toolbarTwo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+    border-top: none;
+    padding: 7px;
+    justify-content: space-between;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    border: 1px solid #ccc;
+    flex-direction: row;
+    position: relative;
+    top: -5px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+.toolbarBtn {
+    width: 24px;
+    color: #BEC4CD;
+    background-color: none;
+    border: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+
+.toolbarBtn:hover,
+.toolbarBtn:focus {
+    color: #00A389;
+    background-color: none;
+    background: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+
+
+}
+
+
+
+.editorTextarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    resize: none;
+    margin: 0;
+    padding: 0;
+    padding: 16px;
+    color: #00A389;
+    font-size: 16px;
+}
+
+.editorTextarea::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 18.5px;
+    font-family: 'Kumbh Sans';
+
+}
+
+.boxButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightButtonBox {
+    display: flex;
+    align-items: center;
+    color: #D6DCE4;
+    justify-content: space-between;
+}
+
+.icon {
+    font-size: 24px;
+    width: 50px;
+}

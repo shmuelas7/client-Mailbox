@@ -1,0 +1,20 @@
+.container {
+    color: #a2aab4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #DEE1E6 1px;
+    width: 100%;
+
+    min-height: 80px;
+
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.box {
+    display: flex;
+    gap: 1.5rem
+}

@@ -1,0 +1,23 @@
+.container {
+    Height: 130px;
+    padding: 16px;
+    max-width: 100%;
+}
+
+
+
+.date {
+    color: #A2AAB4;
+    font-size: 12.5px;
+    line-height: 15.5px;
+    font-weight: 500;
+
+
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+
+}

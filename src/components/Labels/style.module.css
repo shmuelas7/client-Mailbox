@@ -1,0 +1,42 @@
+.container {
+    height: 20px;
+    width: 166px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: #a2aab4;
+
+}
+
+.container:hover {
+    color: #00A389;
+}
+
+.img {
+    transform: scaleX(2);
+    height: 100%;
+    color: #fff;
+    width: 50%;
+    width: 30px;
+    text-align: center;
+    line-height: 40px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    margin-right: 30px;
+}
+
+.text {
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    display: flex;
+    gap: 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+    align-items: center;
+    text-transform: capitalize;
+    transition: .05s ease-in-out all;
+    font-weight: 600;
+}

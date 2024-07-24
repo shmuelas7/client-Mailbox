@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    Height: 45px;
+    align-items: center;
+    color: #a2aab4;
+    transition: .05s ease-in-out all;
+    cursor: pointer;
+
+
+}
+
+.container:hover {
+    color: #00a389;
+
+}
+
+.text {
+    font-size: 14.5px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.img {
+    width: 24px;
+    height: 24px;
+    margin: 20px;
+
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.number {
+    Width: 24px;
+    Height: 24px;
+    text-align: center;
+    background-color: #00A389;
+    border-radius: 7px;
+    color: white;
+    margin-right: 30px;
+    font-weight: 600;
+    line-height: 18px;
+    padding-top: 3px;
+
+}
