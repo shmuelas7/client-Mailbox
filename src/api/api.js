@@ -1,6 +1,6 @@
 import axios from 'axios';
 const api = axios.create({
-    baseURL: 'http://localhost:3213/',
+    baseURL: 'https://tictactoeonline-server.onrender.com',
 });
 
 export default api
