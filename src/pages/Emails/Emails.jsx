@@ -28,7 +28,7 @@ function Emails() {
   return (
     <div style={{ display: "flex", flexGrow: "1" }}>
       {!unRead ? (
-        <h1>hh</h1>
+        <h1>Loading...</h1>
       ) : (
         <div className={style.container}>
           <div className={style.text}>

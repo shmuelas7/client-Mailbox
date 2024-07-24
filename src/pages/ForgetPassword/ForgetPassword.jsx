@@ -31,7 +31,7 @@ export default function ForgetPassword() {
           </div>
 
           <div className={style.forgetPassword}>
-            <Link to="/login">Back to Login</Link>
+            <Link to="/">Back to Login</Link>
           </div>
           <button type="button" className={style.SignIn}>
             Send reset link
